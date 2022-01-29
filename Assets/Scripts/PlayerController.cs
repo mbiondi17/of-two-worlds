@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
 	private PlayerInput playerInput;
 	private InputAction moveAction;
+    private InputAction toggleAction; //get input to toggle between light and dark
 	private bool collidingWithObstacle;
 	
 	private Vector2 currInputVector;
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
 
 		playerInput = GetComponent<PlayerInput>();
 		moveAction = playerInput.actions["Movement"];
+        toggleAction = playerInput.actions["ToggleLightDark"];
 
 		rb2d = GetComponent<Rigidbody2D>();
 		
@@ -46,6 +48,19 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(toggleAction.triggered) //if key to switch between light and dark is pressed
+        {
+            if(currentState == PlayerController.States.lightWorld)
+            {
+                currentState = PlayerController.States.darkWorld;
+                print("dark");
+            }
+            else if (currentState == PlayerController.States.darkWorld)
+            {
+                currentState = PlayerController.States.lightWorld;
+                print("light");
+            }
+        }
         Vector2 input = moveAction.ReadValue<Vector2>();
 
 		currInputVector = Vector2.SmoothDamp(currInputVector, input, ref smoothInputVelocity, smoothInputSpeed);

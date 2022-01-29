@@ -7,7 +7,7 @@ public class LightToDark : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //toggleAction = playerInput.actions["ToggleLightDark"];
     }
 
     // Update is called once per frame
