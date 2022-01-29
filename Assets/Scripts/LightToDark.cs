@@ -11,14 +11,21 @@ public class LightToDark : MonoBehaviour
     //these are the tilemaps for light and dark, set in the inspector
     public GameObject lightmap;
     public GameObject darkmap;
+    public Animator animator;
 
+    public void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     public void ActivateDarkWorld()
     {
+        animator.Play("FadetoClear", 0, 0.0f);
         lightmap.SetActive(false);
         darkmap.SetActive(true);
     }
     public void ActivateLightWorld()
     {
+        animator.Play("FadetoClear", 0, 0.0f);
         darkmap.SetActive(false);
         lightmap.SetActive(true);
     }
