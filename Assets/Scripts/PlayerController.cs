@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
 	
 	[SerializeField] private float smoothInputSpeed = .05f;
 
+    public enum States { lightWorld, darkWorldCombat, darkWorld };
+    public States currentState;
+
 	// Start is called before the first frame update
     void Start()
     {
