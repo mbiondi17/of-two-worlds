@@ -4,26 +4,22 @@ using UnityEngine;
 
 public class LightToDark : MonoBehaviour
 {
+
+    //these methods are called when the player presses space
+    //see code in PlayerController
+
     //these are the tilemaps for light and dark, set in the inspector
     public GameObject lightmap;
     public GameObject darkmap;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-
-    }
     public void ActivateDarkWorld()
     {
-        print("light to dark DARK");
+        lightmap.SetActive(false);
+        darkmap.SetActive(true);
     }
     public void ActivateLightWorld()
     {
-        print("light to dark LIGHT");
-    }
-    // Update is called once per frame
-    void Update()
-    {
+        darkmap.SetActive(false);
+        lightmap.SetActive(true);
     }
 }
