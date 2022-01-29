@@ -51,3 +51,6 @@ TagManager:
   - name: Character
     uniqueID: 306731383
     locked: 0
+  - name: Text
+    uniqueID: 1099680297
+    locked: 0
