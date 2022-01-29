@@ -22,6 +22,8 @@ public class LightToDark : MonoBehaviour
         animator.Play("FadetoClear", 0, 0.0f);
         lightmap.SetActive(false);
         darkmap.SetActive(true);
+        //add this next
+        //start coroutine that does activate light world when time is up
     }
     public void ActivateLightWorld()
     {
