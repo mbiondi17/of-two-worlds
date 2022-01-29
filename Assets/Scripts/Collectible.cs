@@ -11,9 +11,9 @@ public class Collectible : MonoBehaviour
         {
             PlayerController player = FindObjectOfType<PlayerController>();
             //set playercontroller state to darkWorldCombat
-            player.SetState(PlayerController.States.darkWorldCombat);
-
+            player.SetGameState(GameManager.States.darkWorldCombat);
         }
+        Destroy(this.gameObject);
     }
 
 }
