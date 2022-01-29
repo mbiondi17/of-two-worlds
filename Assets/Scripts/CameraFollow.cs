@@ -6,17 +6,18 @@ public class CameraFollow : MonoBehaviour
 {
     public PlayerController target;
     public Vector2 focusAreaSize;
+
     FocusArea focusarea;
 
     public float verticalOffset;
 
     void Start()
     {
-        focusarea = new FocusArea(target.GetComponent<BoxCollider2D>().bounds, focusAreaSize);
+        focusarea = new FocusArea(target.GetComponent<PolygonCollider2D>().bounds, focusAreaSize);
     }
     void LateUpdate()
     {
-        focusarea.Update(target.GetComponent<BoxCollider2D>().bounds);
+        focusarea.Update(target.GetComponent<PolygonCollider2D>().bounds);
         Vector2 focusPosition = focusarea.center + Vector2.up * verticalOffset;
         transform.position = (Vector3)focusPosition + Vector3.forward * -10;
     }

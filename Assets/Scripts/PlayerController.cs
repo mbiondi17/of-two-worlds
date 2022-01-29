@@ -13,9 +13,12 @@ public class PlayerController : MonoBehaviour
 
 	private PlayerInput playerInput;
 	private InputAction moveAction;
+	private bool collidingWithObstacle;
 	
 	private Vector2 currInputVector;
 	private Vector2 smoothInputVelocity;
+
+	private Rigidbody2D rb2d;
 	
 	[SerializeField] private float smoothInputSpeed = .05f;
 
@@ -35,17 +38,30 @@ public class PlayerController : MonoBehaviour
 
 		playerInput = GetComponent<PlayerInput>();
 		moveAction = playerInput.actions["Movement"];
+
+		rb2d = GetComponent<Rigidbody2D>();
 		
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector2 input = moveAction.ReadValue<Vector2>();
 
 		currInputVector = Vector2.SmoothDamp(currInputVector, input, ref smoothInputVelocity, smoothInputSpeed);
 
-		Vector2 movementDelta = currInputVector * speed * Time.deltaTime;
-		this.transform.position += new Vector3(movementDelta.x, movementDelta.y, 0); 
+		Vector2 movementDelta = currInputVector * speed;
+
+		//if(!this.collidingWithObstacle) {
+			rb2d.velocity = new Vector2(movementDelta.x, movementDelta.y ); 
+		//}		
     }
+
+	// void OnCollisionEnter2D(Collision2D other) {
+
+	// 	if (other.gameObject.tag == "Obstacle")
+	// 		UnityEngine.Debug.Log("hit something");
+	// 		this.collidingWithObstacle = true;
+	// 		this.forbiddenDirection = 
+	// }
 }

@@ -1,0 +1,2220 @@
+fileFormatVersion: 2
+guid: 18bb5fea8d7fc5d4b9cf2cdd10b74ff9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 106631454337480109
+    second: GloGameforesttiles_0
+  - first:
+      213: 1316000194861655204
+    second: GloGameforesttiles_1
+  - first:
+      213: -1213754459442434625
+    second: GloGameforesttiles_2
+  - first:
+      213: 3594163916935467953
+    second: GloGameforesttiles_3
+  - first:
+      213: -290673877809047221
+    second: GloGameforesttiles_4
+  - first:
+      213: -7884744687011636794
+    second: GloGameforesttiles_5
+  - first:
+      213: 1641565626376935825
+    second: GloGameforesttiles_6
+  - first:
+      213: 6491135523048772930
+    second: GloGameforesttiles_7
+  - first:
+      213: -2593107182547344329
+    second: GloGameforesttiles_8
+  - first:
+      213: -5945354205957833193
+    second: GloGameforesttiles_9
+  - first:
+      213: 8944367815433736214
+    second: GloGameforesttiles_10
+  - first:
+      213: -5658469376051888414
+    second: GloGameforesttiles_11
+  - first:
+      213: 1925290820924330400
+    second: GloGameforesttiles_12
+  - first:
+      213: -1345187282080121280
+    second: GloGameforesttiles_13
+  - first:
+      213: -1707421043846934701
+    second: GloGameforesttiles_14
+  - first:
+      213: -5069040036102008031
+    second: GloGameforesttiles_15
+  - first:
+      213: 6922963220944985742
+    second: GloGameforesttiles_16
+  - first:
+      213: -7894633220515977333
+    second: GloGameforesttiles_17
+  - first:
+      213: -405917604294896480
+    second: GloGameforesttiles_18
+  - first:
+      213: -7012437378537205537
+    second: GloGameforesttiles_19
+  - first:
+      213: 3228431690591331212
+    second: GloGameforesttiles_20
+  - first:
+      213: -7856499105895736159
+    second: GloGameforesttiles_21
+  - first:
+      213: 1534594667007343557
+    second: GloGameforesttiles_22
+  - first:
+      213: 3447289473902290592
+    second: GloGameforesttiles_23
+  - first:
+      213: -1244670643144809685
+    second: GloGameforesttiles_24
+  - first:
+      213: -6163948417550482404
+    second: GloGameforesttiles_25
+  - first:
+      213: -3146009342610363126
+    second: GloGameforesttiles_26
+  - first:
+      213: -5133311237324172540
+    second: GloGameforesttiles_27
+  - first:
+      213: 1304938646809519118
+    second: GloGameforesttiles_28
+  - first:
+      213: 6485982916879415577
+    second: GloGameforesttiles_29
+  - first:
+      213: 4088390778200288506
+    second: GloGameforesttiles_30
+  - first:
+      213: -3820684399430478040
+    second: GloGameforesttiles_31
+  - first:
+      213: -9013480804288490569
+    second: GloGameforesttiles_32
+  - first:
+      213: 5726141904826210191
+    second: GloGameforesttiles_33
+  - first:
+      213: 9012593376994940674
+    second: GloGameforesttiles_34
+  - first:
+      213: 2155710784416742029
+    second: GloGameforesttiles_35
+  - first:
+      213: 3421941949865115575
+    second: GloGameforesttiles_36
+  - first:
+      213: -9060804562527701770
+    second: GloGameforesttiles_37
+  - first:
+      213: -3752738818478758386
+    second: GloGameforesttiles_38
+  - first:
+      213: 1705771165392542441
+    second: GloGameforesttiles_39
+  - first:
+      213: -415538423172907581
+    second: GloGameforesttiles_40
+  - first:
+      213: -3339685275806191881
+    second: GloGameforesttiles_41
+  - first:
+      213: -1816862551114793831
+    second: GloGameforesttiles_42
+  - first:
+      213: -1555268800458773321
+    second: GloGameforesttiles_43
+  - first:
+      213: 6511416686405915981
+    second: GloGameforesttiles_44
+  - first:
+      213: -8106505022528339466
+    second: GloGameforesttiles_45
+  - first:
+      213: -6188624870653952470
+    second: GloGameforesttiles_46
+  - first:
+      213: 6545536778311410818
+    second: GloGameforesttiles_47
+  - first:
+      213: -7420163635042795661
+    second: GloGameforesttiles_48
+  - first:
+      213: 5665265723007340360
+    second: GloGameforesttiles_49
+  - first:
+      213: 9065120096886581471
+    second: GloGameforesttiles_50
+  - first:
+      213: 3804831188500992396
+    second: GloGameforesttiles_51
+  - first:
+      213: 2802529809457105587
+    second: GloGameforesttiles_52
+  - first:
+      213: 6262050384910263310
+    second: GloGameforesttiles_53
+  - first:
+      213: -2079724622361180862
+    second: GloGameforesttiles_54
+  - first:
+      213: -6238397465940021492
+    second: GloGameforesttiles_55
+  - first:
+      213: -3676062494402536372
+    second: GloGameforesttiles_56
+  - first:
+      213: 3484671956599229458
+    second: GloGameforesttiles_57
+  - first:
+      213: 308901819738491199
+    second: GloGameforesttiles_58
+  - first:
+      213: 7595945937887074900
+    second: GloGameforesttiles_59
+  - first:
+      213: -1883073990338405469
+    second: GloGameforesttiles_60
+  - first:
+      213: -3754001606071221964
+    second: GloGameforesttiles_61
+  - first:
+      213: -4688074712110755231
+    second: GloGameforesttiles_62
+  - first:
+      213: 1523383169015086711
+    second: GloGameforesttiles_63
+  - first:
+      213: 4177219144557838687
+    second: GloGameforesttiles_64
+  - first:
+      213: 4731038820385988972
+    second: GloGameforesttiles_65
+  - first:
+      213: 9198089866820270847
+    second: GloGameforesttiles_66
+  - first:
+      213: -5593863452252687622
+    second: GloGameforesttiles_67
+  - first:
+      213: 416477004836611645
+    second: GloGameforesttiles_68
+  - first:
+      213: 1464935757411551674
+    second: GloGameforesttiles_69
+  - first:
+      213: -1483008703404591367
+    second: GloGameforesttiles_70
+  - first:
+      213: -1734887997576927230
+    second: GloGameforesttiles_71
+  - first:
+      213: -7414097042433631627
+    second: GloGameforesttiles_72
+  - first:
+      213: -832468444172397743
+    second: GloGameforesttiles_73
+  - first:
+      213: -7115153889207491332
+    second: GloGameforesttiles_74
+  - first:
+      213: -2448270024473028948
+    second: GloGameforesttiles_75
+  - first:
+      213: -130026816952874698
+    second: GloGameforesttiles_76
+  - first:
+      213: 5722568416081289367
+    second: GloGameforesttiles_77
+  - first:
+      213: -5574569913580970935
+    second: GloGameforesttiles_78
+  - first:
+      213: 8851161248600241316
+    second: GloGameforesttiles_79
+  - first:
+      213: 1278723349890473190
+    second: GloGameforesttiles_80
+  - first:
+      213: -513082740691490747
+    second: GloGameforesttiles_81
+  - first:
+      213: 7254439620692701779
+    second: GloGameforesttiles_82
+  - first:
+      213: 2798470060691344268
+    second: GloGameforesttiles_83
+  - first:
+      213: -7328238563674523831
+    second: GloGameforesttiles_84
+  - first:
+      213: 8680500231604453867
+    second: GloGameforesttiles_85
+  - first:
+      213: 7259667651067001168
+    second: GloGameforesttiles_86
+  - first:
+      213: -4223622004431762610
+    second: GloGameforesttiles_87
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 75
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GloGameforesttiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da53ba52eb4da7100800000000000000
+      internalID: 106631454337480109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4e21b643f534210800000000000000
+      internalID: 1316000194861655204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd2368ffb0e72fe0800000000000000
+      internalID: -1213754459442434625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3177d2a0901e130800000000000000
+      internalID: 3594163916935467953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b49d4bfe5a157fbf0800000000000000
+      internalID: -290673877809047221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_5
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9d50a7b72c39290800000000000000
+      internalID: -7884744687011636794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_6
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19950b36d3308c610800000000000000
+      internalID: 1641565626376935825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_7
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245dd30ed55251a50800000000000000
+      internalID: 6491135523048772930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73460cf91ce630cd0800000000000000
+      internalID: -2593107182547344329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_9
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e320a79dbdd7da0800000000000000
+      internalID: -5945354205957833193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_10
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6105d5b8327c02c70800000000000000
+      internalID: 8944367815433736214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_11
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee300415141971b0800000000000000
+      internalID: -5658469376051888414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_12
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1d38e0dc108ba10800000000000000
+      internalID: 1925290820924330400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_13
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ebd374b4fe45de0800000000000000
+      internalID: -1345187282080121280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_14
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f0a7f5b950e48e0800000000000000
+      internalID: -1707421043846934701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_15
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12318efa1f627a9b0800000000000000
+      internalID: -5069040036102008031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 300
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e1589be5e431060800000000000000
+      internalID: 6922963220944985742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87a52bd9e0a07290800000000000000
+      internalID: -7894633220515977333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_18
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4dcebe614ed5af0800000000000000
+      internalID: -405917604294896480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_19
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd05e929b51deae90800000000000000
+      internalID: -7012437378537205537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_20
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c836f438481bdcc20800000000000000
+      internalID: 3228431690591331212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_21
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac19ee40bb18f290800000000000000
+      internalID: -7856499105895736159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_22
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb7e2118b9fb4510800000000000000
+      internalID: 1534594667007343557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_23
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6a3e1138b37df20800000000000000
+      internalID: 3447289473902290592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_24
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b232ff405aa0abee0800000000000000
+      internalID: -1244670643144809685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14821e7291457aa0800000000000000
+      internalID: -6163948417550482404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_26
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d26a1db212754d0800000000000000
+      internalID: -3146009342610363126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_27
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40395c980a0d2c8b0800000000000000
+      internalID: -5133311237324172540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_28
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04a2c019c21c1210800000000000000
+      internalID: 1304938646809519118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_29
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91979d34917d20a50800000000000000
+      internalID: 6485982916879415577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_30
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc6c9560c1ecb830800000000000000
+      internalID: 4088390778200288506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_31
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827d11518c33afac0800000000000000
+      internalID: -3820684399430478040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_32
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b31596c6fea9e280800000000000000
+      internalID: -9013480804288490569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_33
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 225
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8715aa59b7577f40800000000000000
+      internalID: 5726141904826210191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20752d4fce9231d70800000000000000
+      internalID: 9012593376994940674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_35
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a73a7798f9aed10800000000000000
+      internalID: 2155710784416742029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_36
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfb7bbb21e2d7f20800000000000000
+      internalID: 3421941949865115575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_37
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f43c4fa14e814280800000000000000
+      internalID: -9060804562527701770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_38
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0621cd6de79bebc0800000000000000
+      internalID: -3752738818478758386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_39
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea935d56dd1ca710800000000000000
+      internalID: 1705771165392542441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_40
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cdb0487106bb3af0800000000000000
+      internalID: -415538423172907581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_41
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe28f1afed07a1d0800000000000000
+      internalID: -3339685275806191881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_42
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cb71bc22539c6e0800000000000000
+      internalID: -1816862551114793831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_43
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc286224439a6ae0800000000000000
+      internalID: -1555268800458773321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_44
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4596c13af23d5a50800000000000000
+      internalID: 6511416686405915981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_45
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f14742d1a8ef7f80800000000000000
+      internalID: -8106505022528339466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_46
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ef58808769d1aa0800000000000000
+      internalID: -6188624870653952470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_47
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284a187250b66da50800000000000000
+      internalID: 6545536778311410818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_48
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fb006dc78460990800000000000000
+      internalID: -7420163635042795661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_49
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f8c02c8211f9e40800000000000000
+      internalID: 5665265723007340360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_50
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8ed25f2b6cdcd70800000000000000
+      internalID: 9065120096886581471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_51
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 150
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81ddec9ec97dc430800000000000000
+      internalID: 3804831188500992396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba4225630694e620800000000000000
+      internalID: 2802529809457105587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_53
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04ac26b5a547e650800000000000000
+      internalID: 6262050384910263310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_54
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245478d89755323e0800000000000000
+      internalID: -2079724622361180862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_55
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fa2f2ae82cc69a0800000000000000
+      internalID: -6238397465940021492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_56
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c100153a00cfcc0800000000000000
+      internalID: -3676062494402536372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_57
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21cccd39eaa0c5030800000000000000
+      internalID: 3484671956599229458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_58
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f390cf38190794400800000000000000
+      internalID: 308901819738491199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_59
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a94d0e5983a6960800000000000000
+      internalID: 7595945937887074900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_60
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab1a18ce2afdd5e0800000000000000
+      internalID: -1883073990338405469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_61
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43101e7cd6b17ebc0800000000000000
+      internalID: -3754001606071221964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_62
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162952843ec90feb0800000000000000
+      internalID: -4688074712110755231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_63
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ef3f5cbe4242510800000000000000
+      internalID: 1523383169015086711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_64
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51c45c1ea678f930800000000000000
+      internalID: 4177219144557838687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_65
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61a0b3bdb608a140800000000000000
+      internalID: 4731038820385988972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_66
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa31f3100e26af70800000000000000
+      internalID: 9198089866820270847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_67
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af23076e3da9e52b0800000000000000
+      internalID: -5593863452252687622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_68
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36a76a11af97c500800000000000000
+      internalID: 416477004836611645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_69
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 75
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9884f4f4f745410800000000000000
+      internalID: 1464935757411551674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6b1ca017b4b6be0800000000000000
+      internalID: -1483008703404591367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_71
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208a65bde807ce7e0800000000000000
+      internalID: -1734887997576927230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_72
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a187f7506db1990800000000000000
+      internalID: -7414097042433631627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_73
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153d1625c5a7274f0800000000000000
+      internalID: -832468444172397743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_74
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf46c874c35e14d90800000000000000
+      internalID: -7115153889207491332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_75
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca65c0d526ff50ed0800000000000000
+      internalID: -2448270024473028948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_76
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639cf348c4d023ef0800000000000000
+      internalID: -130026816952874698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_77
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790256ba7a5aa6f40800000000000000
+      internalID: 5722568416081289367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_78
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c1d6de23623a2b0800000000000000
+      internalID: -5574569913580970935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_79
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a435889244a5da70800000000000000
+      internalID: 8851161248600241316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_80
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec183c9c10feb110800000000000000
+      internalID: 1278723349890473190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_81
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54823bc37f921e8f0800000000000000
+      internalID: -513082740691490747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_82
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35278eb3662fca460800000000000000
+      internalID: 7254439620692701779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_83
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bc21a71b926d620800000000000000
+      internalID: 2798470060691344268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_84
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9477cde5adddc4a90800000000000000
+      internalID: -7328238563674523831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_85
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1ca7928f4577870800000000000000
+      internalID: 8680500231604453867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_86
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0593e39e3458fb460800000000000000
+      internalID: 7259667651067001168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GloGameforesttiles_87
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b42582a2ea265c0800000000000000
+      internalID: -4223622004431762610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
