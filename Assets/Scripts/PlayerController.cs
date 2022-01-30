@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private float smoothInputSpeed = .05f;
 	private PlayerInput playerInput;
 	private InputAction moveAction;
+	private InputAction quitAction;
 	private Vector2 currInputVector;
 	private Vector2 smoothInputVelocity;
 	#endregion
@@ -61,6 +62,7 @@ public class PlayerController : MonoBehaviour
 		playerInput = GetComponent<PlayerInput>();
 		moveAction = playerInput.actions["Movement"];
         toggleAction = playerInput.actions["ToggleLightDark"];
+		quitAction = playerInput.actions["QuitGame"];
 
 		gm = FindObjectOfType<GameManager>();
 		playerInput = GetComponent<PlayerInput>();
@@ -110,6 +112,10 @@ public class PlayerController : MonoBehaviour
                 lighttodark.ActivateLightWorld();
             }
         }
+		if(quitAction.triggered) {
+			//doesn't work in editor, FYI
+			Application.Quit();
+		}
 
 	}
 

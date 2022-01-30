@@ -22,9 +22,15 @@ public class Collectible : MonoBehaviour
             //set playercontroller state to darkWorldCombat
             player.SetGameState(GameManager.States.darkWorldCombat);
             alert.Play();
+
+            //register that the player has picked this up
+            var gm = FindObjectOfType<GameManager>();
+            gm.collectiblesRetrieved.Add(this.GetComponent<SpriteRenderer>().sprite);
+
+            lighttodark.RemoveFromList(this);
+            Destroy(this.gameObject);
         }
-        lighttodark.RemoveFromList(this);
-        Destroy(this.gameObject);
+        
     }
 
 }
