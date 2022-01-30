@@ -4942,6 +4942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lighttodark: {fileID: 0}
   alert: {fileID: 7613882275555484249}
+  textPrefab: {fileID: 1769468591141675628, guid: 792eee87907ac014a974edb77b71a69a, type: 3}
 --- !u!82 &7613882275555484249
 AudioSource:
   m_ObjectHideFlags: 0

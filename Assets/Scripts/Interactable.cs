@@ -9,8 +9,11 @@ public class Interactable : MonoBehaviour
 
     [TextArea]
     public string bubbleTextLightQuest = "";
+    [TextArea]
     public string bubbleTextDarkQuest = "";
+    [TextArea]
     public string bubbleTextNoQuest = "";
+    [TextArea]
     public string bubbleTextQuestComplete = "";
 
     public Sprite collectibleSprite;
@@ -21,6 +24,7 @@ public class Interactable : MonoBehaviour
     public bool givesQuest = true;
     private bool givenQuest = false;
     private bool questComplete = false;
+    public string tutorialType = "";
     private GameObject collectibleSpawnerWrapper;
 
     private void Start()
@@ -29,6 +33,8 @@ public class Interactable : MonoBehaviour
     }
 
         private void OnTriggerEnter2D(Collider2D other) {
+
+        var isDarkWorld = GameObject.FindObjectOfType<GameManager>().GetState() == GameManager.States.darkWorld;
         //Always display text when getting near an interactable
         charText = Instantiate(charTextPrefab, gameObject.transform.position + new Vector3(0, textBubbleYOffset, 0), Quaternion.identity);
         if(!givesQuest) {
@@ -36,7 +42,6 @@ public class Interactable : MonoBehaviour
         } else if(questComplete) { 
             displayText(bubbleTextQuestComplete);
         } else {
-            var isDarkWorld = GameObject.FindObjectOfType<GameManager>().GetState() == GameManager.States.darkWorld;
             displayText(isDarkWorld ? bubbleTextDarkQuest : bubbleTextLightQuest);
         }
         //If it gives a quest and has not given a quest
@@ -52,10 +57,18 @@ public class Interactable : MonoBehaviour
             gm.collectiblesRetrieved.Remove(this.collectibleSprite);
             gm.collectiblesReturned.Add(this.collectibleSprite);
         }
+
+        //Tutorial NPCs
+        if (tutorialType != "") {
+            displayText(isDarkWorld ? bubbleTextDarkQuest : bubbleTextLightQuest);
+            displayTutorialImage(tutorialType);
+        }
     }
     
     private void OnTriggerExit2D(Collider2D other) {
         Destroy(charText);
+        GameObject tutorialImage = GameObject.Find("TutorialImage");
+        tutorialImage.GetComponent<SpriteRenderer>().enabled = false;
     }
 
     private void displayText(string text) {
@@ -66,6 +79,12 @@ public class Interactable : MonoBehaviour
         {
             thinkingsound.Play();
         }
+    }
+
+    private void displayTutorialImage(string type) {
+        GameObject tutorialImage = GameObject.Find("TutorialImage");
+        tutorialImage.GetComponent<SpriteRenderer>().enabled = true;
+        tutorialImage.transform.position = charText.transform.position;
     }
 
     private void spawnCollectible(){
