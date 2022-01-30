@@ -18,6 +18,14 @@ public class PlayerController : MonoBehaviour
 	private Vector2 smoothInputVelocity;
 	#endregion
 
+	#region Animation Control
+	private Animator anim;
+	bool isMovingUp = false;
+	bool isMovingDown = false;
+	bool isMovingLeft = false;
+	bool isMovingRight = false;
+	bool isNotMoving = false;
+	#endregion
 	private Rigidbody2D rb2d;
 	private GameManager gm;
 
@@ -32,17 +40,24 @@ public class PlayerController : MonoBehaviour
 		moveAction = playerInput.actions["Movement"];
 		rb2d = GetComponent<Rigidbody2D>();
 		particles = GetComponent<ParticleSystem>();
+		anim = GetComponent<Animator>();
     }
 
 	void Update() {		
-		var mousePos = new Vector3(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue(), 0);
-		mousePos = FindObjectOfType<Camera>().ScreenToWorldPoint(mousePos);
-		UnityEngine.Debug.Log(mousePos);
-		var cos = 1 / (mousePos - this.transform.position).normalized.magnitude;
-		var angle = Mathf.Acos(cos) * Mathf.Rad2Deg;
-		var shape = particles.shape;
-		shape.enabled = true;
-		shape.rotation = new Vector3(0, 0, angle);
+		if(particles.isEmitting) {
+			var mousePos = new Vector3(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue(), 0);
+			mousePos = FindObjectOfType<Camera>().ScreenToWorldPoint(mousePos);
+			bool greaterThanOneEighty = mousePos.x > this.transform.position.x;
+			Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y) - new Vector2(this.transform.position.x, this.transform.position.y);
+			var angleOfEmission = Vector2.Angle(Vector2.up, mousePos2D);
+			if(greaterThanOneEighty) {
+				angleOfEmission = 360 - angleOfEmission;
+			}
+			UnityEngine.Debug.Log(angleOfEmission);
+			var shape = particles.shape;
+			shape.enabled = true;
+			shape.rotation = new Vector3(0, 0, angleOfEmission);
+		}
 	}
 
     // Update is called once per frame
@@ -50,12 +65,32 @@ public class PlayerController : MonoBehaviour
     {
 		if(gm.GetState() != GameManager.States.darkWorldCombat) {
 			Vector2 input = moveAction.ReadValue<Vector2>();
-
 			currInputVector = Vector2.SmoothDamp(currInputVector, input, ref smoothInputVelocity, smoothInputSpeed);
+			Vector2 movementDelta = currInputVector * speed * Time.deltaTime;
+			//rb2d.velocity = new Vector2(movementDelta.x, movementDelta.y );
+			rb2d.MovePosition(rb2d.position + movementDelta);
 
-			Vector2 movementDelta = currInputVector * speed;
+			//animation control logic
+			resetDirection();
+			if(input != Vector2.zero) {
+				if(input.x != 0) {
+					if(Mathf.Abs(input.x) > Mathf.Abs(input.y) {
+						is
+					})
+				}
+				else if(input.y != 0) {
+					//don't need to account for both directions here
+					isMovingUp = input.y > 0;
+					isMovingDown = input.y < 0;
+				}
+			} else {
+				isNotMoving = true;
+			}
 
-			rb2d.velocity = new Vector2(movementDelta.x, movementDelta.y ); 
+			else if(input.x < 0) isMovingLeft = true;
+			else if(input.y > 0) isMovingUp = true;
+			else if(input.y < 0) isMovingDown = true;
+			else isNotMoving = true;
 		}
     }
 
@@ -66,6 +101,13 @@ public class PlayerController : MonoBehaviour
 		{
 			rb2d.velocity = Vector2.zero;
 		}
+	}
+
+	private void resetDirection() {
+		isMovingDown = false;
+		isMovingUp = false;
+		isMovingLeft = false;
+		isMovingRight = false;
 	}
 	
 }
