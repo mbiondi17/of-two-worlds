@@ -38,6 +38,8 @@ public class LightToDark : MonoBehaviour
         }
         //add this next
         //start coroutine that does activate light world when time is up
+        print("before coroutine");
+        StartCoroutine(Wait());
     }
     public void ActivateLightWorld()
     {
@@ -48,5 +50,21 @@ public class LightToDark : MonoBehaviour
         {
             item.gameObject.SetActive(false);
         }  
+    }
+
+    IEnumerator Wait()
+    {
+        print("in coroutine");
+        //yield return new WaitForSeconds(1000f); //wait for 2 seconds
+        print(Time.time);
+        yield return new WaitForSecondsRealtime(5);
+        print(Time.time);
+        print("after coroutine");
+        ActivateLightWorld();
+    }
+
+    public void Update()
+    {
+
     }
 }

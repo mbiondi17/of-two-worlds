@@ -2488,6 +2488,7 @@ MonoBehaviour:
   lightmap: {fileID: 251393301}
   darkmap: {fileID: 607958303}
   animator: {fileID: 802629290}
+  collectiblelist: []
 --- !u!1001 &1042316166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19844,11 +19845,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9216660739609144951, guid: a6cd364bcb2d8c14a9f6629c269f9091, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.93
+      value: -3.16
       objectReference: {fileID: 0}
     - target: {fileID: 9216660739609144951, guid: a6cd364bcb2d8c14a9f6629c269f9091, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.38
+      value: -6.37
       objectReference: {fileID: 0}
     - target: {fileID: 9216660739609144951, guid: a6cd364bcb2d8c14a9f6629c269f9091, type: 3}
       propertyPath: m_LocalPosition.z
