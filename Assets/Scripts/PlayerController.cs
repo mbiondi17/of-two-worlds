@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
 
 	private Rigidbody2D rb2d;
 	private GameManager gm;
+
+	private ParticleSystem particles;
 	
 
 	// Start is called before the first frame update
@@ -29,10 +31,18 @@ public class PlayerController : MonoBehaviour
 		playerInput = GetComponent<PlayerInput>();
 		moveAction = playerInput.actions["Movement"];
 		rb2d = GetComponent<Rigidbody2D>();
+		particles = GetComponent<ParticleSystem>();
     }
 
-	void Update() {
-
+	void Update() {		
+		var mousePos = new Vector3(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue(), 0);
+		mousePos = FindObjectOfType<Camera>().ScreenToWorldPoint(mousePos);
+		UnityEngine.Debug.Log(mousePos);
+		var cos = 1 / (mousePos - this.transform.position).normalized.magnitude;
+		var angle = Mathf.Acos(cos) * Mathf.Rad2Deg;
+		var shape = particles.shape;
+		shape.enabled = true;
+		shape.rotation = new Vector3(0, 0, angle);
 	}
 
     // Update is called once per frame
