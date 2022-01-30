@@ -13,10 +13,20 @@ public class LightToDark : MonoBehaviour
     public GameObject darkmap;
     public Animator animator;
 
+    public List<Collectible> collectiblelist;
+
+
     public void Start()
     {
         animator = GetComponent<Animator>();
+        collectiblelist = new List<Collectible>();
     }
+
+    public void AddToList(Collectible obj)
+    {
+        collectiblelist.Add(obj);
+    }
+
     public void ActivateDarkWorld()
     {
         animator.Play("FadetoClear", 0, 0.0f);

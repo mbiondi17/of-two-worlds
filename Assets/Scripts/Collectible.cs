@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
+    private LightToDark lighttodark;
+
+    private void Start()
+    {
+        lighttodark = FindObjectOfType<LightToDark>();
+        lighttodark.AddToList(this);
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
