@@ -32,6 +32,10 @@ public class LightToDark : MonoBehaviour
         animator.Play("FadetoClear", 0, 0.0f);
         lightmap.SetActive(false);
         darkmap.SetActive(true);
+        foreach (Collectible item in collectiblelist) //collectibles active in dark world
+        {
+            item.gameObject.SetActive(true);
+        }
         //add this next
         //start coroutine that does activate light world when time is up
     }
@@ -40,5 +44,9 @@ public class LightToDark : MonoBehaviour
         animator.Play("FadetoClear", 0, 0.0f);
         darkmap.SetActive(false);
         lightmap.SetActive(true);
+        foreach (Collectible item in collectiblelist)
+        {
+            item.gameObject.SetActive(false);
+        }  
     }
 }
