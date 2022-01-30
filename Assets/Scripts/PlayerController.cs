@@ -9,20 +9,12 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField]
-    private float speed = 5.5f;
 
-    private PlayerInput playerInput;
-    private InputAction moveAction;
     private InputAction toggleAction; //get input to toggle between light and dark
     private bool collidingWithObstacle;
 
-    private Vector2 currInputVector;
-    private Vector2 smoothInputVelocity;
-
-    private Rigidbody2D rb2d;
     private LightToDark lighttodark;
 
-    [SerializeField] private float smoothInputSpeed = .05f;
 
     public enum States { lightWorld, darkWorldCombat, darkWorld };
     private States currentState;
@@ -31,6 +23,19 @@ public class PlayerController : MonoBehaviour
     {
         currentState = state;
     }
+	#region Movement and Controls
+	[SerializeField]
+	private float speed = 5.5f;
+	[SerializeField] private float smoothInputSpeed = .05f;
+	private PlayerInput playerInput;
+	private InputAction moveAction;
+	private Vector2 currInputVector;
+	private Vector2 smoothInputVelocity;
+	#endregion
+
+	private Rigidbody2D rb2d;
+	private GameManager gm;
+	
 
     public States GetState()
     {
@@ -48,9 +53,15 @@ public class PlayerController : MonoBehaviour
 		moveAction = playerInput.actions["Movement"];
         toggleAction = playerInput.actions["ToggleLightDark"];
 
+		gm = FindObjectOfType<GameManager>();
+		playerInput = GetComponent<PlayerInput>();
+		moveAction = playerInput.actions["Movement"];
 		rb2d = GetComponent<Rigidbody2D>();
-		
     }
+
+	void Update() {
+
+	}
 
     // Update is called once per frame
     void FixedUpdate()
@@ -69,21 +80,23 @@ public class PlayerController : MonoBehaviour
             }
         }
         Vector2 input = moveAction.ReadValue<Vector2>();
+		if(gm.GetState() != GameManager.States.darkWorldCombat) {
 
-		currInputVector = Vector2.SmoothDamp(currInputVector, input, ref smoothInputVelocity, smoothInputSpeed);
+			currInputVector = Vector2.SmoothDamp(currInputVector, input, ref smoothInputVelocity, smoothInputSpeed);
 
-		Vector2 movementDelta = currInputVector * speed;
+			Vector2 movementDelta = currInputVector * speed;
 
-		//if(!this.collidingWithObstacle) {
 			rb2d.velocity = new Vector2(movementDelta.x, movementDelta.y ); 
-		//}		
+		}
     }
 
-	// void OnCollisionEnter2D(Collision2D other) {
-
-	// 	if (other.gameObject.tag == "Obstacle")
-	// 		UnityEngine.Debug.Log("hit something");
-	// 		this.collidingWithObstacle = true;
-	// 		this.forbiddenDirection = 
-	// }
+	//MVB: obviously an event-based system would be better here, but no time.
+	public void SetGameState(GameManager.States newState) {
+		gm.SetState(newState);
+		if(newState == GameManager.States.darkWorldCombat) 
+		{
+			rb2d.velocity = Vector2.zero;
+		}
+	}
+	
 }
