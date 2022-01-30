@@ -118,6 +118,11 @@ MonoBehaviour:
   lighttodark: {fileID: 0}
   speed: 5.5
   smoothInputSpeed: 0.15
+  dirt1: {fileID: 5387723053546295559}
+  dirt2: {fileID: 6503779253316718647}
+  dirt3: {fileID: 6995291121973027012}
+  dirt4: {fileID: 1260753494409862123}
+  weaponFire: {fileID: 3422948682680091470}
 --- !u!114 &4537757025132541559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5027,7 +5032,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3561129aa844bdf49bbfd39cd503e60d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5123,7 +5128,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0cbde26d06f11e644a467925bba88dab, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5219,7 +5224,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1ae88d615ab9f574b80cf66fe2e3bb86, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5315,7 +5320,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7670099130112114a96abe2d79fd9f44, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
