@@ -84,7 +84,7 @@ public class LightToDark : MonoBehaviour
     public void Update()
     {
         //only need to switch back if they're still in the dark world. If they switch back themselves, nbd.
-        if(inDarkWorld) {
+        if(inDarkWorld && gm.GetState() != GameManager.States.darkWorldCombat) {
             if(Time.time >= lastDarkSwitch + darkTimer) {
                 ActivateLightWorld();
                 gm.SetState(GameManager.States.lightWorld);

@@ -120,6 +120,7 @@ MonoBehaviour:
   bubbleTextLightQuest: ... *sigh* ...
   bubbleTextDarkQuest: The flowers he gave me... gone...
   bubbleTextNoQuest: '*merry humming*'
+  collectibleSprite: {fileID: 7682137004155421761, guid: 147f51b520d602441b6940f7cfcd70d0, type: 3}
   charTextPrefab: {fileID: 1769468591141675628, guid: 792eee87907ac014a974edb77b71a69a, type: 3}
   collectiblePrefab: {fileID: 85672120416222562, guid: 4208815c7efe26441a820d69c9284de8, type: 3}
   textBubbleYOffset: 1.7

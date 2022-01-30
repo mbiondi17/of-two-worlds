@@ -19,9 +19,15 @@ public class Collectible : MonoBehaviour
             PlayerController player = FindObjectOfType<PlayerController>();
             //set playercontroller state to darkWorldCombat
             player.SetGameState(GameManager.States.darkWorldCombat);
+
+            //register that the player has picked this up
+            var gm = FindObjectOfType<GameManager>();
+            gm.collectiblesRetrieved.Add(this.GetComponent<SpriteRenderer>().sprite);
+
+            lighttodark.RemoveFromList(this);
+            Destroy(this.gameObject);
         }
-        lighttodark.RemoveFromList(this);
-        Destroy(this.gameObject);
+        
     }
 
 }

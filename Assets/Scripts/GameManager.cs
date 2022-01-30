@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class GameManager : MonoBehaviour
     public GameObject NPCSpawnCenter;
     public List<Vector3> npcSpawnLocations;
     public List<GameObject> npcPrefabs;
+    public List<Sprite> collectiblesRetrieved;
+    public List<Sprite> collectiblesReturned;
+
     [Range(3,6)]
     public int numQuests = 3;
     #endregion
@@ -58,8 +62,11 @@ public class GameManager : MonoBehaviour
                 lastSpawn = Time.time;
             }
             if(Time.time >= lastCombatStart + combatLength) {
-            HandleCombatEnd();
+                HandleCombatEnd();
+            }
         }
+        if(collectiblesReturned.Count == numQuests) {
+            SceneManager.LoadScene("Credits");
         }
     }
 
@@ -88,7 +95,6 @@ public class GameManager : MonoBehaviour
             GameObject.Destroy(enemy.gameObject);
         }
         currentState = States.lightWorld;
-        //TODO : trigger light world flip here
     }
 
     private void SpawnNPCs()
@@ -114,6 +120,7 @@ public class GameManager : MonoBehaviour
         }
 
         for(int i = 0; i < npcPrefabs.Count; i++) {
+            //
             var newNPC = Instantiate(npcPrefabs[i], npcSpawnLocations[spawnIndices[i]], Quaternion.identity);
             newNPC.GetComponent<Interactable>().givesQuest = questGivers.Contains(i);
         }

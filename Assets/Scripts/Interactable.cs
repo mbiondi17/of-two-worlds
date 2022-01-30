@@ -10,13 +10,16 @@ public class Interactable : MonoBehaviour
     public string bubbleTextLightQuest = "";
     public string bubbleTextDarkQuest = "";
     public string bubbleTextNoQuest = "";
+    public string bubbleTextQuestComplete = "";
 
+    public Sprite collectibleSprite;
     public GameObject charTextPrefab;
     public GameObject collectiblePrefab;
     public float textBubbleYOffset = 1.7f;
     private GameObject charText;
     public bool givesQuest = true;
     private bool givenQuest = false;
+    private bool questComplete = false;
     private GameObject collectibleSpawnerWrapper;
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -24,6 +27,8 @@ public class Interactable : MonoBehaviour
         charText = Instantiate(charTextPrefab, gameObject.transform.position + new Vector3(0, textBubbleYOffset, 0), Quaternion.identity);
         if(!givesQuest) {
             displayText(bubbleTextNoQuest);
+        } else if(questComplete) { 
+            displayText(bubbleTextQuestComplete);
         } else {
             var isDarkWorld = GameObject.FindObjectOfType<GameManager>().GetState() == GameManager.States.darkWorld;
             displayText(isDarkWorld ? bubbleTextDarkQuest : bubbleTextLightQuest);
@@ -33,6 +38,13 @@ public class Interactable : MonoBehaviour
             //For now, just spawn a collectible
             spawnCollectible();
             this.givenQuest = true;
+        }
+        var gm = FindObjectOfType<GameManager>();
+        if(givenQuest && gm.collectiblesRetrieved.Contains(this.collectibleSprite)) {
+            questComplete = true;
+            displayText(bubbleTextQuestComplete);
+            gm.collectiblesRetrieved.Remove(this.collectibleSprite);
+            gm.collectiblesReturned.Add(this.collectibleSprite);
         }
     }
     
@@ -54,5 +66,6 @@ public class Interactable : MonoBehaviour
     private void createCollectible(Vector3 spawnLocation){
         //Debug.Log("Creating a collectible at " + spawnLocation);
         GameObject newCollectible = Instantiate(collectiblePrefab, spawnLocation, Quaternion.identity);
+        newCollectible.GetComponent<SpriteRenderer>().sprite = this.collectibleSprite;
     }
 }
