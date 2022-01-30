@@ -33,9 +33,18 @@ public class PlayerController : MonoBehaviour
 	private Rigidbody2D rb2d;
 	private GameManager gm;
 	private ParticleSystem particles;
-	
-	#region Things that Should Not Be
-	private bool wasInCombat = false;
+
+
+    //audio
+    public AudioSource dirt1;
+    public AudioSource dirt2;
+    public AudioSource dirt3;
+    public AudioSource dirt4;
+    public AudioSource weaponFire;
+
+
+    #region Things that Should Not Be
+    private bool wasInCombat = false;
 	#endregion
 
 	// Start is called before the first frame update
@@ -63,6 +72,10 @@ public class PlayerController : MonoBehaviour
 
 	void Update() {		
 		if(particles.isEmitting) {
+            if (!weaponFire.isPlaying)
+            {
+                weaponFire.Play(); //play weapon sound
+            }
 			var mousePos = new Vector3(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue(), 0);
 			mousePos = FindObjectOfType<Camera>().ScreenToWorldPoint(mousePos);
 			bool greaterThanOneEighty = mousePos.x > this.transform.position.x;
@@ -100,6 +113,28 @@ public class PlayerController : MonoBehaviour
 
 	}
 
+
+    void PlayrandomDirtSound()
+    {
+        int randnum = Random.Range(1, 5); //1 2 3 4
+        if(randnum == 1)
+         {
+            dirt1.Play();
+        }
+        else if(randnum == 2)
+         {
+            dirt2.Play();
+        }
+        else if (randnum == 3)
+        {
+            dirt3.Play();
+        }
+        else if (randnum == 4)
+        {
+            dirt4.Play();
+        }
+        
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -113,6 +148,11 @@ public class PlayerController : MonoBehaviour
 			//animation control logic
 			resetDirection();
 			if(input != Vector2.zero) {
+                if (!dirt1.isPlaying && !dirt2.isPlaying && !dirt3.isPlaying && !dirt4.isPlaying) //if dirt sound is not already playing
+                {
+                    //play dirt sound
+                    PlayrandomDirtSound();
+                }
 				if(input.x != 0) {
 					if(Mathf.Abs(input.x) > Mathf.Abs(input.y)) {
 						isMovingLeft = input.x < 0;

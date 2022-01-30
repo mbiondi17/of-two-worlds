@@ -16,6 +16,7 @@ public class LightToDark : MonoBehaviour
 
     public AudioSource lightAudio;
     public AudioSource darkAudio;
+    public AudioSource worldtransition;
 
     public bool inDarkWorld;
     public float lastDarkSwitch = 0.0f;
@@ -43,6 +44,7 @@ public class LightToDark : MonoBehaviour
     public void ActivateDarkWorld()
     {
         animator.Play("FadetoClear", 0, 0.0f);
+        worldtransition.Play();
         lightmap.SetActive(false);
         darkmap.SetActive(true);
         darkmap.GetComponentInChildren<CompositeCollider2D>().GenerateGeometry();
@@ -57,6 +59,7 @@ public class LightToDark : MonoBehaviour
     }
     public void ActivateLightWorld()
     {
+        worldtransition.Play();
         inDarkWorld = false; //this should run either after 5 seconds or on timer interval elapse;
         animator.Play("FadetoClear", 0, 0.0f);
         darkmap.SetActive(false);
