@@ -5,6 +5,7 @@ using TMPro;
 
 public class Interactable : MonoBehaviour
 {
+    public AudioSource thinkingsound;
 
     [TextArea]
     public string bubbleTextLightQuest = "";
@@ -19,7 +20,12 @@ public class Interactable : MonoBehaviour
     private bool givenQuest = false;
     private GameObject collectibleSpawnerWrapper;
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void Start()
+    {
+        thinkingsound = GetComponent<AudioSource>();
+    }
+
+        private void OnTriggerEnter2D(Collider2D other) {
         //Always display text when getting near an interactable
         charText = Instantiate(charTextPrefab, gameObject.transform.position + new Vector3(0, textBubbleYOffset, 0), Quaternion.identity);
         if(!givesQuest) {
@@ -43,6 +49,11 @@ public class Interactable : MonoBehaviour
     private void displayText(string text) {
         TextMeshPro charTextMesh = charText.GetComponentInChildren<TextMeshPro>();
         charTextMesh.text = text;
+        //play sound
+        if (!thinkingsound.isPlaying)
+        {
+            thinkingsound.Play();
+        }
     }
 
     private void spawnCollectible(){
