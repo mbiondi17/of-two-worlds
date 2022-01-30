@@ -14,6 +14,9 @@ public class LightToDark : MonoBehaviour
     public GameObject darkmap;
     public Animator animator;
 
+    public AudioSource lightAudio;
+    public AudioSource darkAudio;
+
     public bool inDarkWorld;
     public float lastDarkSwitch = 0.0f;
     public float darkTimer = 5.0f;
@@ -43,6 +46,8 @@ public class LightToDark : MonoBehaviour
         lightmap.SetActive(false);
         darkmap.SetActive(true);
         darkmap.GetComponentInChildren<CompositeCollider2D>().GenerateGeometry();
+        lightAudio.volume = 0;
+        darkAudio.volume = 0.5f;
         foreach (Collectible item in collectiblelist) //collectibles active in dark world
         {
             item.gameObject.SetActive(true);
@@ -57,6 +62,8 @@ public class LightToDark : MonoBehaviour
         darkmap.SetActive(false);
         lightmap.SetActive(true);
         lightmap.GetComponentInChildren<CompositeCollider2D>().GenerateGeometry();
+        lightAudio.volume = 0.5f;
+        darkAudio.volume = 0;
         foreach (Collectible item in collectiblelist)
         {
             item.gameObject.SetActive(false);
