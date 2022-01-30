@@ -11,8 +11,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
 
     private InputAction toggleAction; //get input to toggle between light and dark
-    private bool collidingWithObstacle;
-
     private LightToDark lighttodark;
 
 
@@ -23,6 +21,7 @@ public class PlayerController : MonoBehaviour
     {
         currentState = state;
     }
+
 	#region Movement and Controls
 	[SerializeField]
 	private float speed = 5.5f;
