@@ -98,6 +98,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f98ce2312546db40991136e632b4a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toggleAction:
+    m_Name: Toggle
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 0ce4cc2c-a16a-40bb-b661-ad89cfd67f69
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   speed: 5.5
   smoothInputSpeed: 0.15
 --- !u!114 &9216660739609144950

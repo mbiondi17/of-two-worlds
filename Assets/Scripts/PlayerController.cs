@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
 
     private InputAction toggleAction; //get input to toggle between light and dark
-    private LightToDark lighttodark;
+    public LightToDark lighttodark;
 
 
     public enum States { lightWorld, darkWorldCombat, darkWorld };
@@ -55,7 +55,11 @@ public class PlayerController : MonoBehaviour
 	// Start is called before the first frame update
     void Start()
     {
-        lighttodark = FindObjectOfType<LightToDark>();
+        if(lighttodark == null) {
+			lighttodark = FindObjectOfType<LightToDark>();
+		} else if(!lighttodark.gameObject.activeInHierarchy) {
+			lighttodark.gameObject.SetActive(true);
+		}
         float charHeight = GetComponent<SpriteRenderer>().bounds.extents.y;
 		float charWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
 
