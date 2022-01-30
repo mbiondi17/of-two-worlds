@@ -5,6 +5,7 @@ using UnityEngine;
 public class LightToDark : MonoBehaviour
 {
 
+    public GameManager gm;
     //these methods are called when the player presses space
     //see code in PlayerController
 
@@ -12,6 +13,10 @@ public class LightToDark : MonoBehaviour
     public GameObject lightmap;
     public GameObject darkmap;
     public Animator animator;
+
+    public bool inDarkWorld;
+    public float lastDarkSwitch = 0.0f;
+    public float darkTimer = 5.0f;
 
     public List<Collectible> collectiblelist;
 
@@ -26,45 +31,57 @@ public class LightToDark : MonoBehaviour
     {
         collectiblelist.Add(obj);
     }
+    
+    public void RemoveFromList(Collectible obj)
+    {
+        collectiblelist.Remove(obj);
+    }
 
     public void ActivateDarkWorld()
     {
         animator.Play("FadetoClear", 0, 0.0f);
         lightmap.SetActive(false);
         darkmap.SetActive(true);
+        darkmap.GetComponentInChildren<CompositeCollider2D>().GenerateGeometry();
         foreach (Collectible item in collectiblelist) //collectibles active in dark world
         {
             item.gameObject.SetActive(true);
         }
-        //add this next
-        //start coroutine that does activate light world when time is up
-        print("before coroutine");
-        StartCoroutine(Wait());
+        inDarkWorld = true;
+        lastDarkSwitch = Time.time;
     }
     public void ActivateLightWorld()
     {
+        inDarkWorld = false; //this should run either after 5 seconds or on timer interval elapse;
         animator.Play("FadetoClear", 0, 0.0f);
         darkmap.SetActive(false);
         lightmap.SetActive(true);
+        lightmap.GetComponentInChildren<CompositeCollider2D>().GenerateGeometry();
         foreach (Collectible item in collectiblelist)
         {
             item.gameObject.SetActive(false);
         }  
     }
 
-    IEnumerator Wait()
-    {
-        print("in coroutine");
-        //yield return new WaitForSeconds(1000f); //wait for 2 seconds
-        print(Time.time);
-        yield return new WaitForSecondsRealtime(5);
-        print(Time.time);
-        print("after coroutine");
-        ActivateLightWorld();
-    }
+    // IEnumerator Wait()
+    // {
+    //     print("in coroutine");
+    //     //yield return new WaitForSeconds(1000f); //wait for 2 seconds
+    //     print(Time.time);
+    //     yield return new WaitForSecondsRealtime(5);
+    //     print(Time.time);
+    //     print("after coroutine");
+    //     ActivateLightWorld();
+    // }
 
     public void Update()
     {
-
+        //only need to switch back if they're still in the dark world. If they switch back themselves, nbd.
+        if(inDarkWorld) {
+            if(Time.time >= lastDarkSwitch + darkTimer) {
+                ActivateLightWorld();
+                gm.SetState(GameManager.States.lightWorld);
+            }
+        }
     }
 }

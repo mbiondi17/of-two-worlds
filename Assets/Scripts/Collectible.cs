@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
-    private LightToDark lighttodark;
+    public LightToDark lighttodark;
 
     private void Start()
     {
-        lighttodark = FindObjectOfType<LightToDark>();
+        if(lighttodark == null) lighttodark = FindObjectOfType<LightToDark>();
         lighttodark.AddToList(this);
     }
 
@@ -20,6 +20,7 @@ public class Collectible : MonoBehaviour
             //set playercontroller state to darkWorldCombat
             player.SetGameState(GameManager.States.darkWorldCombat);
         }
+        lighttodark.RemoveFromList(this);
         Destroy(this.gameObject);
     }
 

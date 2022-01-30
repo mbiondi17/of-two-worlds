@@ -172,7 +172,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.25, y: 0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -184,14 +184,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.421875, y: 0.4375}
+    - - {x: -0.41180193, y: 0.56844974}
       - {x: -0.546875, y: 0.25}
       - {x: -0.578125, y: -0.0625}
-      - {x: -0.578125, y: -0.5}
-      - {x: -0.484375, y: -0.6875}
+      - {x: -0.62345386, y: -0.22299087}
+      - {x: -0.49948454, y: -0.7580114}
+      - {x: -0.2425584, y: -0.73786527}
+      - {x: 0.07886633, y: -0.69834423}
       - {x: 0.109375, y: -0.6875}
       - {x: 0.109375, y: 0.34375}
-      - {x: -0.078125, y: 0.4375}
+      - {x: -0.0025770664, y: 0.4979383}
 --- !u!50 &3342061621489556643
 Rigidbody2D:
   serializedVersion: 4

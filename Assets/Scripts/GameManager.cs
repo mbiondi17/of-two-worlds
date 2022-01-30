@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    #region NPC Spawn Info
+    public GameObject NPCSpawnCenter;
+    public List<Vector3> npcSpawnLocations;
+    public List<GameObject> npcPrefabs;
+    [Range(3,6)]
+    public int numQuests = 3;
+    #endregion
 
-    public enum States { lightWorld, darkWorldCombat, darkWorld };
+    #region Enemy Spawn Info
     public GameObject enemyPrefab;
-
-    #region Spawn Info
     public float spawnTime = 0.6f;
     float lastSpawn = 0.0f;
     public GameObject enemySpawnCenter;
-    public List<Vector3> spawnLocations;
+    public List<Vector3> enemySpawnLocations;
     #endregion
 
     #region Combat Info
@@ -21,6 +26,8 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region State Management
+    public enum States { lightWorld, darkWorldCombat, darkWorld };
+
     private States currentState;
 
     public void SetState(States state)
@@ -38,7 +45,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnLocations.Clear();
+        enemySpawnLocations.Clear();
+        SpawnNPCs();
     }
 
     // Update is called once per frame
@@ -56,20 +64,20 @@ public class GameManager : MonoBehaviour
     }
 
     public void StartCombat() {
-        spawnLocations.Clear();
+        enemySpawnLocations.Clear();
         var playerPosition = FindObjectOfType<PlayerController>().GetComponent<Transform>().position;
         this.enemySpawnCenter.transform.position = playerPosition;
         this.lastCombatStart = Time.time;
         foreach(Transform child in enemySpawnCenter.transform) {
-            spawnLocations.Add(child.transform.position);
+            enemySpawnLocations.Add(child.transform.position);
         }
         lastSpawn = Time.time;
     }
 
     void SpawnEnemy() {
-        if(spawnLocations != null) {
-            int spawnIndex = Random.Range(0,spawnLocations.Count);
-            Vector3 spawnLoc = spawnLocations[spawnIndex];
+        if(enemySpawnLocations != null) {
+            int spawnIndex = Random.Range(0,enemySpawnLocations.Count);
+            Vector3 spawnLoc = enemySpawnLocations[spawnIndex];
             var enemyObj = Instantiate(enemyPrefab, spawnLoc, Quaternion.identity);
         }
     }
@@ -81,5 +89,34 @@ public class GameManager : MonoBehaviour
         }
         currentState = States.lightWorld;
         //TODO : trigger light world flip here
+    }
+
+    private void SpawnNPCs()
+    {
+        foreach(Transform spawn in NPCSpawnCenter.transform) {
+            npcSpawnLocations.Add(spawn.transform.position);
+        }
+
+        List<int> spawnIndices = new List<int>();
+        //breaks if more prefabs than spawn locations!
+        while(spawnIndices.Count < npcPrefabs.Count) {
+            var nextLoc = Random.Range(0, npcSpawnLocations.Count);
+            if(spawnIndices.Contains(nextLoc)) continue;
+            else spawnIndices.Add(nextLoc);
+        }
+
+        List<int> questGivers = new List<int>();
+        //breaks if more quests than prefabs! (currently quest # limited in editor)
+        while(questGivers.Count < numQuests) {
+            var nextLoc = Random.Range(0, npcPrefabs.Count);
+            if(questGivers.Contains(nextLoc)) continue;
+            else questGivers.Add(nextLoc);
+        }
+
+        for(int i = 0; i < npcPrefabs.Count; i++) {
+            var newNPC = Instantiate(npcPrefabs[i], npcSpawnLocations[spawnIndices[i]], Quaternion.identity);
+            newNPC.GetComponent<Interactable>().givesQuest = questGivers.Contains(i);
+        }
+
     }
 }

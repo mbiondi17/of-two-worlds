@@ -7,7 +7,10 @@ public class Interactable : MonoBehaviour
 {
 
     [TextArea]
-    public string bubbleText = "";
+    public string bubbleTextLightQuest = "";
+    public string bubbleTextDarkQuest = "";
+    public string bubbleTextNoQuest = "";
+
     public GameObject charTextPrefab;
     public GameObject collectiblePrefab;
     public float textBubbleYOffset = 1.7f;
@@ -19,7 +22,12 @@ public class Interactable : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         //Always display text when getting near an interactable
         charText = Instantiate(charTextPrefab, gameObject.transform.position + new Vector3(0, textBubbleYOffset, 0), Quaternion.identity);
-        displayText(bubbleText);
+        if(!givesQuest) {
+            displayText(bubbleTextNoQuest);
+        } else {
+            var isDarkWorld = GameObject.FindObjectOfType<GameManager>().GetState() == GameManager.States.darkWorld;
+            displayText(isDarkWorld ? bubbleTextDarkQuest : bubbleTextLightQuest);
+        }
         //If it gives a quest and has not given a quest
         if (givesQuest && !givenQuest) {
             //For now, just spawn a collectible
@@ -34,7 +42,7 @@ public class Interactable : MonoBehaviour
 
     private void displayText(string text) {
         TextMeshPro charTextMesh = charText.GetComponentInChildren<TextMeshPro>();
-        charTextMesh.text = bubbleText;
+        charTextMesh.text = text;
     }
 
     private void spawnCollectible(){

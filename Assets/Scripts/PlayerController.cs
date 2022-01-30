@@ -13,15 +13,6 @@ public class PlayerController : MonoBehaviour
     private InputAction toggleAction; //get input to toggle between light and dark
     public LightToDark lighttodark;
 
-
-    public enum States { lightWorld, darkWorldCombat, darkWorld };
-    private States currentState;
-
-    public void SetState(States state)
-    {
-        currentState = state;
-    }
-
 	#region Movement and Controls
 	[SerializeField]
 	private float speed = 5.5f;
@@ -46,11 +37,6 @@ public class PlayerController : MonoBehaviour
 	#region Things that Should Not Be
 	private bool wasInCombat = false;
 	#endregion
-
-    public States GetState()
-    {
-        return currentState;
-    }
 
 	// Start is called before the first frame update
     void Start()
@@ -97,25 +83,26 @@ public class PlayerController : MonoBehaviour
 				wasInCombat = false;
 			}
 		}
+		if(toggleAction.triggered) //if key to switch between light and dark is pressed
+        {
+			var currentGameState = gm.GetState();
+            if(currentGameState == GameManager.States.lightWorld)
+            {
+                gm.SetState(GameManager.States.darkWorld);
+                lighttodark.ActivateDarkWorld();
+            }
+            else if (currentGameState == GameManager.States.darkWorld)
+            {
+                gm.SetState(GameManager.States.lightWorld);
+                lighttodark.ActivateLightWorld();
+            }
+        }
 
 	}
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(toggleAction.triggered) //if key to switch between light and dark is pressed
-        {
-            if(currentState == PlayerController.States.lightWorld)
-            {
-                currentState = PlayerController.States.darkWorld;
-                lighttodark.ActivateDarkWorld();
-            }
-            else if (currentState == PlayerController.States.darkWorld)
-            {
-                currentState = PlayerController.States.lightWorld;
-                lighttodark.ActivateLightWorld();
-            }
-        }
         Vector2 input = moveAction.ReadValue<Vector2>();
 		if(gm.GetState() != GameManager.States.darkWorldCombat) {
 			currInputVector = Vector2.SmoothDamp(currInputVector, input, ref smoothInputVelocity, smoothInputSpeed);
