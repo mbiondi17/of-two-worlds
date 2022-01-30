@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4537757025132541559}
   - component: {fileID: 4688653913710501536}
   - component: {fileID: 3342061621489556643}
-  - component: {fileID: 5621800319893760428}
   - component: {fileID: 4537757025132541555}
   - component: {fileID: 4537757025132541554}
   - component: {fileID: 4537757025132541564}
@@ -111,6 +110,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  lighttodark: {fileID: 0}
   speed: 5.5
   smoothInputSpeed: 0.15
 --- !u!114 &4537757025132541559
@@ -213,48 +213,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &5621800319893760428
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4537757025132541515}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6933333, y: 1.28}
-    newSize: {x: 0.6933333, y: 1.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.28, y: 0.5733333}
-      - {x: 0.10666667, y: 0.64}
-      - {x: -0.08, y: 0.64}
-      - {x: -0.22666667, y: 0.5733333}
-      - {x: -0.29333335, y: 0.37333333}
-      - {x: -0.21333334, y: 0.12085129}
-      - {x: -0.34666666, y: 0.013333334}
-      - {x: -0.34666666, y: -0.28}
-      - {x: -0.33333334, y: -0.30666667}
-      - {x: -0.26666668, y: -0.5733333}
-      - {x: -0.24000001, y: -0.64}
-      - {x: 0.27290753, y: -0.658723}
-      - {x: 0.3092216, y: -0.33787173}
-      - {x: 0.35175705, y: -0.057635695}
-      - {x: 0.24848938, y: 0.14800492}
-      - {x: 0.37787056, y: 0.39826116}
-      - {x: 0.34666666, y: 0.44}
 --- !u!198 &4537757025132541555
 ParticleSystem:
   m_ObjectHideFlags: 0
