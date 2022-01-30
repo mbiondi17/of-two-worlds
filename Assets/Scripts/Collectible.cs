@@ -5,10 +5,12 @@ using UnityEngine;
 public class Collectible : MonoBehaviour
 {
     public LightToDark lighttodark;
+    public AudioSource alert;
 
     private void Start()
     {
-        if(lighttodark == null) lighttodark = FindObjectOfType<LightToDark>();
+        alert = GetComponent<AudioSource>();
+        if (lighttodark == null) lighttodark = FindObjectOfType<LightToDark>();
         lighttodark.AddToList(this);
     }
 
@@ -19,6 +21,7 @@ public class Collectible : MonoBehaviour
             PlayerController player = FindObjectOfType<PlayerController>();
             //set playercontroller state to darkWorldCombat
             player.SetGameState(GameManager.States.darkWorldCombat);
+            alert.Play();
         }
         lighttodark.RemoveFromList(this);
         Destroy(this.gameObject);
