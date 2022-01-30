@@ -10,9 +10,14 @@ public class GameManager : MonoBehaviour
 
     #region Spawn Info
     public float spawnTime = 0.6f;
-    public float lastSpawn = 0.0f;
+    float lastSpawn = 0.0f;
     public GameObject enemySpawnCenter;
     public List<Vector3> spawnLocations;
+    #endregion
+
+    #region Combat Info
+    float lastCombatStart = 0.0f;
+    public float combatLength = 30f;
     #endregion
 
     #region State Management
@@ -44,6 +49,9 @@ public class GameManager : MonoBehaviour
                 SpawnEnemy();
                 lastSpawn = Time.time;
             }
+            if(Time.time >= lastCombatStart + combatLength) {
+            HandleCombatEnd();
+        }
         }
     }
 
@@ -51,7 +59,7 @@ public class GameManager : MonoBehaviour
         spawnLocations.Clear();
         var playerPosition = FindObjectOfType<PlayerController>().GetComponent<Transform>().position;
         this.enemySpawnCenter.transform.position = playerPosition;
-        
+        this.lastCombatStart = Time.time;
         foreach(Transform child in enemySpawnCenter.transform) {
             spawnLocations.Add(child.transform.position);
         }
@@ -59,8 +67,19 @@ public class GameManager : MonoBehaviour
     }
 
     void SpawnEnemy() {
-        int spawnIndex = Random.Range(0,spawnLocations.Count);
-        Vector3 spawnLoc = spawnLocations[spawnIndex];
-        var enemyObj = Instantiate(enemyPrefab, spawnLoc, Quaternion.identity);
+        if(spawnLocations != null) {
+            int spawnIndex = Random.Range(0,spawnLocations.Count);
+            Vector3 spawnLoc = spawnLocations[spawnIndex];
+            var enemyObj = Instantiate(enemyPrefab, spawnLoc, Quaternion.identity);
+        }
+    }
+
+    void HandleCombatEnd() {
+        var enemies = FindObjectsOfType<EnemyController>();
+        foreach(var enemy in enemies) {
+            GameObject.Destroy(enemy.gameObject);
+        }
+        currentState = States.lightWorld;
+        //TODO : trigger light world flip here
     }
 }

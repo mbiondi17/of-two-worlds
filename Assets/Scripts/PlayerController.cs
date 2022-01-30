@@ -24,13 +24,14 @@ public class PlayerController : MonoBehaviour
 	bool isMovingDown = false;
 	bool isMovingLeft = false;
 	bool isMovingRight = false;
-	bool isNotMoving = false;
 	#endregion
 	private Rigidbody2D rb2d;
 	private GameManager gm;
-
 	private ParticleSystem particles;
 	
+	#region Things that Should Not Be
+	private bool wasInCombat = false;
+	#endregion
 
 	// Start is called before the first frame update
     void Start()
@@ -53,11 +54,19 @@ public class PlayerController : MonoBehaviour
 			if(greaterThanOneEighty) {
 				angleOfEmission = 360 - angleOfEmission;
 			}
-			UnityEngine.Debug.Log(angleOfEmission);
 			var shape = particles.shape;
 			shape.enabled = true;
 			shape.rotation = new Vector3(0, 0, angleOfEmission);
 		}
+		if(gm.GetState() != GameManager.States.darkWorldCombat) {
+			if(wasInCombat) {
+				//in the first frame back from combat, stop the particles, and any other work that needs to be done.
+				var em = particles.emission;
+				em.enabled = false;
+				wasInCombat = false;
+			}
+		}
+
 	}
 
     // Update is called once per frame
@@ -74,31 +83,36 @@ public class PlayerController : MonoBehaviour
 			resetDirection();
 			if(input != Vector2.zero) {
 				if(input.x != 0) {
-					if(Mathf.Abs(input.x) > Mathf.Abs(input.y) {
-						is
-					})
+					if(Mathf.Abs(input.x) > Mathf.Abs(input.y)) {
+						isMovingLeft = input.x < 0;
+						isMovingRight = input.x > 0;
+					} else {
+						isMovingUp = input.y > 0;
+						isMovingDown = input.y < 0;
+					}
 				}
 				else if(input.y != 0) {
 					//don't need to account for both directions here
 					isMovingUp = input.y > 0;
 					isMovingDown = input.y < 0;
 				}
-			} else {
-				isNotMoving = true;
 			}
-
-			else if(input.x < 0) isMovingLeft = true;
-			else if(input.y > 0) isMovingUp = true;
-			else if(input.y < 0) isMovingDown = true;
-			else isNotMoving = true;
+			anim.SetBool("isMovingUp", isMovingUp);
+			anim.SetBool("isMovingDown", isMovingDown);
+			anim.SetBool("isMovingLeft", isMovingLeft);
+			anim.SetBool("isMovingRight", isMovingRight);
 		}
     }
 
 	//MVB: obviously an event-based system would be better here, but no time.
 	public void SetGameState(GameManager.States newState) {
 		gm.SetState(newState);
+		resetDirection();
+		var em = particles.emission;
+		em.enabled = true;
 		if(newState == GameManager.States.darkWorldCombat) 
 		{
+			wasInCombat = true;
 			rb2d.velocity = Vector2.zero;
 		}
 	}
@@ -108,6 +122,23 @@ public class PlayerController : MonoBehaviour
 		isMovingUp = false;
 		isMovingLeft = false;
 		isMovingRight = false;
+		anim.SetBool("isMovingUp", false);
+		anim.SetBool("isMovingDown", false);
+		anim.SetBool("isMovingLeft", false);
+		anim.SetBool("isMovingRight", false);
+	}
+
+	void OnParticleCollision(GameObject other) {
+		if(other.tag == "Enemy") {
+			Destroy(other.gameObject);
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D other) {
+		if(other.gameObject.tag == "Enemy") {
+			Destroy(other.gameObject);
+			Destroy(this.gameObject); // actually should respawn & kick out of the light
+		}
 	}
 	
 }
