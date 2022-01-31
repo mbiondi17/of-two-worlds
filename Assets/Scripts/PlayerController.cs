@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
 
     #region Things that Should Not Be
     private bool wasInCombat = false;
+	private bool movePlayerAfterDeath = false;
 	#endregion
 
 	// Start is called before the first frame update
@@ -179,6 +180,11 @@ public class PlayerController : MonoBehaviour
 			anim.SetBool("isMovingLeft", isMovingLeft);
 			anim.SetBool("isMovingRight", isMovingRight);
 		}
+
+		if(movePlayerAfterDeath) {
+			rb2d.MovePosition(new Vector2(0, 1));
+			movePlayerAfterDeath = false;
+		}
     }
 
 	//MVB: obviously an event-based system would be better here, but no time.
@@ -214,7 +220,9 @@ public class PlayerController : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D other) {
 		if(other.gameObject.tag == "Enemy") {
 			Destroy(other.gameObject);
-			Destroy(this.gameObject); // actually should respawn & kick out of the light
+			gm.PlayerDied();
+			lighttodark.ActivateLightWorld();
+			movePlayerAfterDeath = true;
 		}
 	}
 	

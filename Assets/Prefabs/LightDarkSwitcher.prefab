@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4974925552117669435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.38, y: -7.37, z: 0}
-  m_LocalScale: {x: 146.00813, y: 138.33572, z: 1}
+  m_LocalScale: {x: 187.62704, y: 157.48508, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -127,7 +127,7 @@ MonoBehaviour:
   worldtransition: {fileID: 7907260608129732315}
   inDarkWorld: 0
   lastDarkSwitch: 0
-  darkTimer: 5
+  darkTimer: 7.5
   collectiblelist: []
 --- !u!82 &856838944
 AudioSource:

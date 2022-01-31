@@ -12,6 +12,7 @@ public class Collectible : MonoBehaviour
         alert = GetComponent<AudioSource>();
         if (lighttodark == null) lighttodark = FindObjectOfType<LightToDark>();
         lighttodark.AddToList(this);
+        this.gameObject.SetActive(FindObjectOfType<GameManager>().GetState() != GameManager.States.lightWorld);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -22,15 +23,16 @@ public class Collectible : MonoBehaviour
             //set playercontroller state to darkWorldCombat
             player.SetGameState(GameManager.States.darkWorldCombat);
             alert.Play();
-
-            //register that the player has picked this up
             var gm = FindObjectOfType<GameManager>();
-            gm.collectiblesRetrieved.Add(this.GetComponent<SpriteRenderer>().sprite);
+            gm.SetCollectible(this.GetComponent<Collectible>());
 
-            lighttodark.RemoveFromList(this);
-            Destroy(this.gameObject);
+
         }
-        
+    }
+
+    public void OnPlayerGet() {
+        lighttodark.RemoveFromList(this);
+        Destroy(this.gameObject);
     }
 
 }

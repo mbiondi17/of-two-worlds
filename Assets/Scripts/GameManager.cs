@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     #region Combat Info
     float lastCombatStart = 0.0f;
     public float combatLength = 30f;
+    private Collectible currentCollectible;
     #endregion
 
     #region State Management
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+    float endofGameTimer = -1.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -62,14 +64,25 @@ public class GameManager : MonoBehaviour
                 lastSpawn = Time.time;
             }
             if(Time.time >= lastCombatStart + combatLength) {
-                HandleCombatEnd();
+                HandleCombatEnd(true);
             }
         }
         if(collectiblesReturned.Count == numQuests) {
-            SceneManager.LoadScene("Credits");
+            GameObject.Find("WinText").GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
+            if(endofGameTimer < 0) {
+                endofGameTimer = Time.time + 3;
+            }
+        }
+        if(endofGameTimer > 0.0) {
+            if(Time.time > endofGameTimer) {
+                SceneManager.LoadScene("Credits");
+            }
         }
     }
 
+    public void SetCollectible(Collectible collectible) {
+        this.currentCollectible = collectible;
+    }
     public void StartCombat() {
         enemySpawnLocations.Clear();
         var playerPosition = FindObjectOfType<PlayerController>().GetComponent<Transform>().position;
@@ -89,12 +102,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void HandleCombatEnd() {
+    public void PlayerDied() {
+        HandleCombatEnd(false);
+    }
+
+    void HandleCombatEnd(bool victory) {
         var enemies = FindObjectsOfType<EnemyController>();
         foreach(var enemy in enemies) {
             GameObject.Destroy(enemy.gameObject);
         }
-        currentState = States.lightWorld;
+        this.SetState(States.lightWorld);
+        if(victory) {
+            this.currentCollectible.OnPlayerGet();
+            this.collectiblesRetrieved.Add(currentCollectible.GetComponent<SpriteRenderer>().sprite);
+        }
     }
 
     private void SpawnNPCs()
